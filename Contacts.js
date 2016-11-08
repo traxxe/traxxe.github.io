@@ -1,7 +1,17 @@
 ﻿$(function () {
+    function friend(name) {
+        return {
+            name: ko.observable(name)
+        };
+    }
+
+
     function viewModel() {
         this.firstName = ko.observable('Steve');
         this.lastName = ko.observable('Smith');
+        this.friends = ko.observableArray([new friend("Steve"), new friend("Annie")]);
+
+
         this.fullName = ko.computed(function () {
             return this.firstName() + " " + this.lastName();
         }, this)

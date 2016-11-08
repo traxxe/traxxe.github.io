@@ -13,7 +13,7 @@
             By <span data-bind="text: firstName"></span>&nbsp;<span data-bind="text: lastName"></span>
             (<a data-bind="attr: { href: twitterUrl }, text: twitterAlias"></a>)
         </p>
-        <p><span data-bind="text: fullName"></span></p>
+        <p>Full name: <span data-bind="text: fullName"></span></p>
         <p>
             First Name: <input type="text" data-bind="textInput: firstName" />
         </p>
@@ -21,8 +21,15 @@
             Last Name: <input type="text" data-bind="textInput: lastName" />
         </p>
         <p>
-            <button data-bind="click: capitalizeTwitterAlias">Capitalize</button>
+            <button data-bind="click: capitalizeTwitterAlias">Capitalize Twitter Alias</button>
         </p>
+        <h3>Friends</h3>
+        <div>
+            <ul data-bind="foreach: friends">
+                <li data-bind="text: name"></li>
+            </ul>
+        </div>
+
     </div>
 </body>
 </html>
