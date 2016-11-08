@@ -10,11 +10,15 @@
 <body>
     <div>
         <p>
-            By <span data-bind="text: authorName"></span>
+            By <span data-bind="text: firstName"></span>&nbsp;<span data-bind="text: lastName"></span>
             (<a data-bind="attr: { href: twitterUrl }, text: twitterAlias"></a>)
         </p>
+        <p><span data-bind="text: fullName"></span></p>
         <p>
-            Author Name: <input type="text" data-bind="textInput: authorName" />
+            First Name: <input type="text" data-bind="textInput: firstName" />
+        </p>
+        <p>
+            Last Name: <input type="text" data-bind="textInput: lastName" />
         </p>
         <p>
             <button data-bind="click: capitalizeTwitterAlias">Capitalize</button>
