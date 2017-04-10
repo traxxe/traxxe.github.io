@@ -1,0 +1,52 @@
+﻿// sample variables
+$mycolor: #b6ff00; 
+$a: Blue;
+$b: 4px;
+$c: 1.0em;
+$d: Helvetica, sans-serif;   //list
+$e: 1px #000 Solid 0 0;    //list
+
+
+
+.MainDiv {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: $e;
+    font-size: 10px + 12px;
+}
+
+.bottomDiv1 {
+    background-color: lighten($mycolor, 20%);
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.bottomDiv2 {
+    background-color: darken($mycolor, 20%);
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+#navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navigation li {
+    display: inline;
+}
+
+#navigation a:link, #navigation a:active, #navigation a:visited {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+#navigation a:hover {
+    color: greenyellow;
+    text-decoration: none;
+}

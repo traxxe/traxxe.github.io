@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="Contacts.js"></script>
+</head>
+<body>
+    <div>
+        <p>
+            By <span data-bind="text: firstName"></span>&nbsp;<span data-bind="text: lastName"></span>
+            (<a data-bind="attr: { href: twitterUrl }, text: twitterAlias"></a>)
+        </p>
+        <p>Full name: <span data-bind="text: fullName"></span></p>
+        <p>
+            First Name: <input type="text" data-bind="textInput: firstName" />
+        </p>
+        <p>
+            Last Name: <input type="text" data-bind="textInput: lastName" />
+        </p>
+        <p>
+            <button data-bind="click: capitalizeTwitterAlias">Capitalize Twitter Alias</button>
+        </p>
+        <h3>Friends</h3>
+        <div>
+            <ul data-bind="foreach: friends">
+                <li data-bind="text: name"></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿.MainDiv {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px #000 Solid 0 0;
+  font-size: 22px; }
+
+.bottomDiv1 {
+  background-color: #c5ff33;
+  width: 500px;
+  height: 100px;
+  margin: 20px; }
+
+.bottomDiv2 {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin: 20px; }
+
+#navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+#navigation li {
+  display: inline; }
+
+#navigation a:link, #navigation a:active, #navigation a:visited {
+  color: yellowgreen;
+  text-decoration: none; }
+
+#navigation a:hover {
+  color: greenyellow;
+  text-decoration: none; }
+
