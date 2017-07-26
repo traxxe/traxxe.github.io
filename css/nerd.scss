@@ -18,14 +18,14 @@ $e: 1px #000 Solid 0 0;    //list
 }
 
 .bottomDiv1 {
-    background-color: lighten($mycolor, 20%);
-    width: 100px;
+    background-color: lighten($mycolor, 10%);
+    width: 500px;
     height: 100px;
     margin: 20px;
 }
 
 .bottomDiv2 {
-    background-color: darken($mycolor, 20%);
+    background-color: darken($mycolor, 90%);
     width: 100px;
     height: 100px;
     margin: 20px;
