@@ -1,6 +1,6 @@
 {
   "name": "Hello World",
-  "short_name": "Hello 1",
+  "short_name": "Holiday Project",
   "icons": [{
     "src": "Hello_PWA/images/hello-icon-128.png",
       "sizes": "128x128",
