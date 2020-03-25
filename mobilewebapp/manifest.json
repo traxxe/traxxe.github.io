@@ -1,0 +1,36 @@
+{
+  "name": "My Phone App",
+  "short_name": "My App",
+  "icons": [{
+    "src": "images/phoneapp-icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "images/phoneapp-icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "images/phoneapp-icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }, {
+      "src": "images/phoneapp-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "images/phoneapp-icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }, {
+      "src": "images/phoneapp-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }],
+  "description": "Sample Progressive Web App",
+  "lang": "en-US",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "white",
+  "orientation": "any",
+  "theme_color": "white"
+}
