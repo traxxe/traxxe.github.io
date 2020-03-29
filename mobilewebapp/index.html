@@ -2,24 +2,146 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Hello My Phone</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="manifest" href="/manifest.json">
+  <title>PWA Sample</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="white"/>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />  
-  <link rel="apple-touch-icon" href="images/hello-icon-152.png">   
-  <meta name="theme-color" content="white"/>  
-  <meta name="apple-mobile-web-app-capable" content="yes">  
-  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
-  <meta name="apple-mobile-web-app-title" content="Hello World"> 
-  <meta name="msapplication-TileImage" content="images/hello-icon-144.png">  
-  <meta name="msapplication-TileColor" content="#FFFFFF">
+<link rel="apple-touch-icon" href="images/pwa-icon-152.jpg">   
+<meta name="theme-color" content="white"/>  
+<meta name="apple-mobile-web-app-capable" content="yes">  
+<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+<meta name="apple-mobile-web-app-title" content="Hello World"> 
+<meta name="msapplication-TileImage" content="images/pwa-icon-144.jpg">  
+<meta name="msapplication-TileColor" content="#FFFFFF">
 </head>
 <body class="fullscreen">
-  <div class="container">
-    <h1 class="title">Hello My Phone!</h1>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold; background-color:#ddd;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <div style="width: 120px; height:119px; background-color: #fff;"><img src="images/logo.jpg"</div>
   </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#sectionOne" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Section One</a> 
+    <a href="#sectionTwo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Section Two</a> 
+    <a href="#simpleForm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-grey w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-grey w3-margin-right" onclick="w3_open()">☰</a>
+  <span>My Mobile App</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" id="showcase">
+    <h1 class="w3-xxlarge">My Mobile App</h1>
+    <h1 class="w3-large w3-text-gray"><b>Lorem dolor etc!</b></h1>
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/circle1.jpg" style="width:100%" onclick="onClick(this)" alt="It's a photo">
+      <img src="images/circle4.jpg" style="width:100%" onclick="onClick(this)" alt="It's a photo">
+    </div>
+
+    <div class="w3-half">
+      <img src="images/circle3.jpg" style="width:100%" onclick="onClick(this)" alt="It's a photo">
+      <img src="images/circle2.jpg" style="width:100%" onclick="onClick(this)" alt="It's a photo">
+    </div>
+  </div>
+
+  <!-- Top Section -->
+  <div class="w3-container" id="sectionOne">
+    <h1 class="w3-large w3-text-gray"><b>Section One</b></h1>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  </div>
+  
+  <!-- Section of Text -->
+  <div class="w3-container" id="sectionTwo">
+    <h1 class="w3-large w3-text-grey"><b>Section Two</b></h1>
+    <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p><b>All The Things:</b></p>
+  </div>
+
+  <!-- Images in Boxes -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-container">
+          <h3>Thing 1</h3>
+          <p class="w3-opacity">Thing 1</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-container">
+          <h3>Thing 2</h3>
+          <p class="w3-opacity">Thing 2</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-container">
+          <h3>Thing 3</h3>
+          <p class="w3-opacity">Thing 3</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container" id="simpleForm" style="margin-top:75px">
+    <p>My Form</p>
+    <form action="/myformaction.js" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-grey w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
   <script src="js/main.js"></script>
 </body>
 </html>
