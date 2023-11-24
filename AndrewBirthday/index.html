@@ -1,0 +1,146 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Happy Birthday Andrew</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="white"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />  
+<link rel="apple-touch-icon" href="images/hello-icon-152.png">   
+<meta name="theme-color" content="white"/>  
+<meta name="apple-mobile-web-app-capable" content="yes">  
+<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+<meta name="apple-mobile-web-app-title" content="BirthdaySite"> 
+<meta name="msapplication-TileImage" content="images/hello-icon-144.png">  
+<meta name="msapplication-TileColor" content="#FFFFFF">
+</head>
+<body class="fullscreen">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Happy&nbsp;Birthday<br></b>Andrew!!!</h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#accomplishments" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">More Birthday Boy!</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Andrew Birthday</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-xxlarge">Happy Birthday Andrew!</h1>
+    <h1 class="w3-large w3-text-red"><b>Happy happy happy to you</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/AndrewWithMantis1.png" style="width:100%" onclick="onClick(this)" alt="Andrew with Mantis">
+      <img src="images/AndrewWithMantis2.png" style="width:100%" onclick="onClick(this)" alt="People helping people">
+    </div>
+
+    <div class="w3-half">
+      <img src="images/Birthday91.png" style="width:100%" onclick="onClick(this)" alt="Joyful gathering">
+      <img src="images/GoingForADrive.png" style="width:100%" onclick="onClick(this)" alt="Love!">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="accomplishments" style="margin-top:75px">
+    <h1 class="w3-large w3-text-red"><b>Pix of Andrew!</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p></p>
+    <p> 
+    </p>
+    <p><b>More pix of Andrew!</b></p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/BackyardWater.png" alt="Birthday 1991" style="width:100%">
+        <div class="w3-container">
+          <h3>Sunshine in the Backyard!</h3>
+          <p class="w3-opacity">Have some!</p>
+          <p>Playing with water in the sunshine! Usually we couldn't play outside because we would get eaten alive from fire ants. They weren't getting him this time!</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/UnhappyDinosaur.png" alt="Sad Dinosaur" style="width:100%">
+        <div class="w3-container">
+          <h3>Unhappy Dinosaur!</h3>
+          <p class="w3-opacity">Dinosaur</p>
+          <p>Dino at party. Maybe he didn't want his photo taken. He's so cute!</picture></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/ChristmasHat.png" alt="Going for a drive" style="width:100%">
+        <div class="w3-container">
+          <h3>Wearing a hat!</h3>
+          <p class="w3-opacity">Christmas</p>
+          <p>Happy Andrew at Christmas!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- W3.CSS Container 
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+-->
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+  <script src="js/main.js"></script>
+</body>
+</html>
